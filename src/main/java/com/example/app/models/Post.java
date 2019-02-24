@@ -82,3 +82,5 @@ public class Post {
         this.users = xxx;
     }
 }
+
+//post de todos los metodos

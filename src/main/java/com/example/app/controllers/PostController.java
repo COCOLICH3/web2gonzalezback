@@ -40,3 +40,6 @@ public class PostController {
 
     }
 }
+
+//creas un post, llama al repositorio que lo guarda en la base, cuando lo guardo crea un muro y le seteo el usuario que
+// creo ese post, y guardo el usuario, en la base crea un post al usuario que lo creo..

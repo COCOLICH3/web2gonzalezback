@@ -17,3 +17,6 @@ public interface UserRepository extends JpaRepository<User, Long> {
     @Query(value = "SELECT * FROM user WHERE username=:username and password=:password limit 1", nativeQuery = true)
     List<User> findByUsernameAndPassword(@Param("username") String username, @Param("password") String password);
 }
+
+//findby y una propiedad del user, me la busca automaticamente
+// la query = busca un usuario con ese nombre y pass con ese pass para poder loggearse

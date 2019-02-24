@@ -56,3 +56,6 @@ public class Wall {
         this.post = post;
     }
 }
+
+//tabla que conecta un usuario con un post, cada usuario tiene una lista de muros donde le podes compartir (to do lo que compartio
+// y lo que le compartieron)

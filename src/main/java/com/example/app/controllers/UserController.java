@@ -137,13 +137,13 @@ public class UserController {
     }
 
     @CrossOrigin
-    @PostMapping("/users/{id}/share")
+    @PostMapping("/users/{id}/share") //mando el id y a quien se lo estoy compartiendo
     public void postUser(@PathVariable long id,@RequestBody Wall wall2) {
-        Optional<User> one = this.userRepository.findById(id);
-        if(one.isPresent()){
-            User user = one.get();
+        Optional<User> one = this.userRepository.findById(id); //busco el usuario al que le voy a compartir en la bD
+        if(one.isPresent()){ //devuelve un opcional que puede no existir el usuario, si exste da true
+            User user = one.get(); //trae el usuario dentro del optional
 
-            Wall wall = new Wall();
+            Wall wall = new Wall(); //crea un wall
             wall.setUser(user);
             wall.setPost(wall2.getPost());
             user.getPosts().add(wall);

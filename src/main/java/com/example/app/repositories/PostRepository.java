@@ -13,3 +13,5 @@ import java.util.List;
 public interface PostRepository extends JpaRepository<Post, Long> {
 
 }
+
+//el jpa repository, le indico una entidad y me arma un wrapper q me permite las aplicaciones basicas sobre esa entidad
